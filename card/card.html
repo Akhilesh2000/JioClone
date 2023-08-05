@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #main{
+            display: flex;
+        }
+        #color{
+            width: 30%;
+            height: 100vh;
+            /* border: solid; */
+
+            background:linear-gradient(to bottom right, rgb(63, 63, 202), purple);
+        }
+        #cardImage{
+            position: absolute;
+            top: 200px;
+            left: 500px;
+            background-color: transparent;
+        }
+        #cardImage>img{
+            height: 200px;
+            background-color: transparent;
+
+        }
+        #cardDetails{
+            display: flex;
+            justify-content: center;
+            margin-top: 300px;
+            margin-left: 600px;
+        }
+        #EXPCVV{
+            display: flex;
+        }
+        #form>label{
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+        #EXP>label{
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+        #CVV>label{
+            
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 600;
+        }
+        #EXP>input{
+            width: 70px;
+        }
+        #CVV{
+            margin-left:50px ;
+        }
+        #Confirm{
+            padding: 10px;
+            width: 100%;
+            background-color: rgb(85, 84, 84);
+            color: white;
+            border-radius: 10px;
+            font-size: 16px
+        }
+        #Confirm:hover{
+            cursor: pointer;
+            background-color: rgb(47, 47, 47);
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="color">
+        </div>
+        <div id="cardImage"><img src="./26058-2-credit-card-transparent.png" alt=""></div>
+        <div id="cardDetails">
+            <form id="form"action="">
+                <label for="CARDHOLDER NAME">CARDHOLDER NAME</label><br>
+
+                <input type="text" placeholder="Cardholder Name">
+                <br>
+                <br>
+                <label for="CARD NUMBER">CARD NUMBER</label>
+                <br>
+                <input type="text" placeholder="Card Number">
+                <br>
+                <br>
+                <div id="EXPCVV">
+                    <div id="EXP">
+                        <label for="EXPDATE">EXP. DATE</label><br>
+                        <input type="text" placeholder="MM">
+                        <input type="text" placeholder="YY">
+                    </div>
+                    <div id="CVV">
+                        <label for="CVV">CVV</label>
+                        <br>
+                        <input type="text" placeholder="CVV">
+                    </div>
+                </div>
+                <br>
+                <button id="Confirm">Confirm</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
